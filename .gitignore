@@ -7,5 +7,5 @@
 /build
 /captures
 .externalNativeBuild
-# /key/test.jks
-# /gradle.properties
+/key/test.jks
+/gradle.properties

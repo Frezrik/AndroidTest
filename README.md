@@ -11,8 +11,8 @@
 * 4.支持下载测试用例(提供解析接口)
 * 5.记录并上传测试结果
 
-* 调试环境
-	* Nexus6(Android 7.1.1 eng版本)
-	* 因为调用UiAutomator2.0需要system权限，源码包含测试机的platform key。其余机型需替换key目录下的test.jks
+## 调试环境
+* Nexus6(Android 7.1.1 eng版本)
+* 因为调用UiAutomator2.0需要system权限，请自行添加platform key。
 	
 ## 业余时间编写
