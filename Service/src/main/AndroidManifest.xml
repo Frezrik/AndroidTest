@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.test.service"
+          android:sharedUserId="android.uid.system"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".TesterServiceApi"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.test.service.TesterServiceApi"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
