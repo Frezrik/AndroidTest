@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.test.service"
-          android:sharedUserId="android.uid.system"
           android:versionCode="1"
           android:versionName="1.0">
 
-    <uses-permission android:name="android.permission.REBOOT" />
-    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
 
     <application
         android:allowBackup="true"
@@ -22,6 +22,14 @@
                 <action android:name="com.test.service.TesterServiceApi"/>
             </intent-filter>
         </service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
